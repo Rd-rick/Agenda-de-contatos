@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de contatos</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="conteudo-principal">
+                <header>
+                    <h1>Lista de contatos</h1>
+                    <form id="criar-lista-de-contatos">
+                        <label for="criar-nova-lista"><h2>Nova lista</h2></label>
+                        <input id="criar-nova-lista" type="tel" placeholder="Nome da lista" required maxlength="60">
+                        <button type="submit">+</button>
+                    </form>
+                </header>
+                <main>
+                    <ul>
+                        <li><img src="./imagens/livro-de-enderecos.png" alt="caderno de contato"><p></p></li>
+                    </ul>
+                </main>
+        </div>
+        <div class="sub-listas">
+            <header>
+                <button onclick="voltar()">Voltar</button>
+                <h1 id="nomeLista"></h1>
+                <form id="lista-de-contatos">
+                <label for="nome"><h3>Contato:</h3></label>
+                <input id="nome" placeholder="Nome" required maxlength="60">
+                <label for="telefone"><h3 class="telefone">Telefone:</h3></label>
+                <input id="telefone" placeholder="(00) 00000-0000" required maxlength="15"> 
+                <button type="submit">+</button>
+                </form>
+            </header>
+            <main>
+                <table cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Telefone</th>
+                        </tr>
+                    </thead>
+                    <tbody id="conteudo">
+                        <tr>
+                            <td><span></span></td>
+                            <td><span></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </main>
+        </div>
+    </div>
+
+</body>
+<script rel="stylesheet" src="./script.js"></script>
+</html>
